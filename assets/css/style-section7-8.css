@@ -1,0 +1,241 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-content-img, .div-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-img{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 45%;
+}
+
+.caja-text-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.size-p{
+    width: 70%;
+}
+
+.ajustar{
+    text-align: center;
+}
+
+.tu-puedes{
+    font-size: 24px;
+    margin-top: 2rem;
+}
+
+.btn-personalized{
+    background: linear-gradient(180deg, #000000 0%, #A0B40A 60.94%);
+    border: none;
+    margin-top: 1rem;
+    border-radius: 14px;
+    color: rgba(247, 248, 252, 0.99);
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 10px 40px 10px 40px;
+    -webkit-text-shadow: 3px 3px 2px #570303;
+    -moz-text-shadow: 3px 3px 2px #570303;
+    text-shadow: 3px 3px 4px #570303;
+    animation-name: animated-button;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.btn-personalized:hover{
+    border: inset 3px #A0B40A;
+    background:#2c2c2ce5 ;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+    animation:none;
+}
+
+.btn-personalized:active{
+    border: inset 1px #A0B40A;
+    padding: 8px 35px 8px 35px;
+}
+
+
+@keyframes animated-button {
+    0% {
+      background: linear-gradient(180deg, #000000 0%, #A0B40A 60.94%);
+      background-position: 0 0;
+    }
+    20%, 50% {
+      background: linear-gradient(180deg, #000000 42.19%, #A0B40A 99.48%);
+      background-position: 0 -100%;
+    }
+    60%, 80% {
+      background: linear-gradient(180deg, #A0B40A 42.19%, #000000 90.1%);
+      background-position: 0 -100%;
+    }
+    100% {
+      background: linear-gradient(180deg, #000000 0%, #A0B40A 60.94%);
+      background-position: 0 0;
+    }
+  }
+ 
+#footer{
+    background-color: #001038;
+    margin-top: 8rem;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer div{
+    width: 70%;
+    background: #F7F8FC;
+    border: 4px solid #001038;
+    border-radius: 10px;
+    margin-top: -8%;
+    padding: 30px 50px 30px 50px;
+    z-index: 1;
+}
+
+#footer div q{
+    font-size: 18px;
+}
+
+#footer img{
+    position: absolute;
+    max-width: 65%;
+    height: 350px;
+    margin-top: -10%;
+    margin-right: -30%;
+}
+
+
+/*media query para adaptar la lading page a diferentes dispositivos*/
+@media all and (max-width:1000px){
+ 
+   .img100x100{
+       width: 80px;
+       height: 80px;
+   }
+   
+   .img250x80{
+       width: 170px;
+       height: 60px;
+   }
+
+   .img130x200{
+    width: 70px;
+    height: 140px;
+   }
+
+    .img200x90{
+        width: 150px;
+        height: 60px;
+    }
+   #footer{
+        height: 300px;
+    }
+    #footer div{
+        margin-top: -9.2%; 
+    }
+    #footer img{
+        max-width: 90%;
+        height: 400px;
+        margin-top: -18%;
+        margin-right: -7%;
+    }
+}
+
+@media all and (max-width:770px){
+  
+    .img100x100{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .img250x80{
+        width: 100px;
+        height: 30px;
+    }
+ 
+    .img130x200{
+     width: 60px;
+     height: 100px;
+    }
+ 
+     .img200x90{
+         width: 90px;
+         height: 40px;
+     }
+
+    .btn-personalized{
+        padding: 8px 20px 8px 20px;
+        font-size: 26px;
+    }
+
+    .tu-puedes{
+        font-size:18px;
+    }
+
+    #footer{
+        height: 270px;
+    }
+
+    #footer div{
+       width: 90%;
+       margin-top: -10rem;
+    }
+
+    #footer img{
+        visibility: hidden;
+        max-width: 0px;
+        height: 0px;
+    }
+
+    #footer div q{
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width:500px){
+    #footer{
+        height: 240px;
+    }
+    #footer div{
+       margin-top: -7rem;
+       padding: 8px 10px 8px 10px;
+    }
+    #footer div q{
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:400px){
+
+    .tab-div-img{
+        margin-top: 2rem;
+    }
+
+    #footer{
+        height: 300px;
+    }
+   
+ }

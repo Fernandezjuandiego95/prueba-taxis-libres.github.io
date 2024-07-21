@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.encabezado div{
+    width: 95%;
+}
+
+.encabezado div h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: #001038;
+    text-align: center;
+}
+
+#form, .div-modal-form, .div-content-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#form{
+    align-items: center;
+}
+
+.div-modal-form{
+    flex-direction: row;
+    width: 100%;
+}
+
+.div-content-input{
+     width: 45%;
+     flex-direction: column;
+     align-items: left;
+}
+
+#form .div-modal-form .div-content-input label{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#form .div-modal-form .div-content-input input{
+    border: 1px solid #B5B5B5;
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    padding: 6px 20px 6px 20px;
+    margin-top: 5px;
+}
+
+#form .div-modal-form .div-content-input input:focus{
+    border: 1px solid #A0B40A;
+    outline: medium;
+}
+
+.btn-registrar{
+    width: 150px;
+    border-radius: 5px;
+    padding: 7px 20px 7px 20px;
+    text-transform: none;
+    font-size: 22px;
+    font-weight: 600;
+    animation: none;
+    margin-bottom: 2rem;
+}
+
+/*media query para adaptar la lading page a diferentes dispositivos*/
+@media all and (max-width:500px){
+    .div-modal-form{
+        flex-direction: column;
+    }
+
+    .div-content-input{
+        width: 100%;
+        align-items: center;
+   }
+}
+ 

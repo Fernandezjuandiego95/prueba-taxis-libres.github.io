@@ -1,0 +1,345 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7F8FC;
+}
+
+#main-header{
+    background: #001038;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+/*Estilos para los textos (h1,h2,span)*/
+header .section-text h1, header h2{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    -webkit-text-shadow: 3px 3px 2px #570303;
+    -moz-text-shadow: 3px 3px 2px #570303;
+    text-shadow: 3px 3px 4px #570303;
+}
+
+header h1{
+    font-size: 6vw;
+    line-height: 127px;
+    text-transform: uppercase;
+}
+
+header h2{
+    font-size: 3vw;
+    line-height: 63px;
+}
+
+header span{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 55px;
+}
+
+header .section-text{
+    width: 60%;
+    height: 80vh;
+}
+
+header .div-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .div-text div h2{
+    text-align: center;
+    margin-top: -2rem;
+}
+
+/**estilos para posicionar el logo*/
+header .div-logo{
+    width: 22%;
+    height: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/Vector.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 97% 97%;
+}
+
+header .div-logo img{
+    max-width: 80%;
+    height: 80%;
+}
+
+
+/*Efecto cristal*/
+header .glass{
+    width: 96%;
+    height: 94vh;
+    background: rgba(235, 230, 230, 0.21);
+    border-width: 2px 0px 0px 2px;
+    border-style: solid;
+    border-color: rgba(233, 213, 213, 0.8);
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    position: absolute;
+}
+
+header .glass:hover{
+    backdrop-filter: none;
+    background: rgba(235, 230, 230, 0.188);
+}
+
+
+/*imagen de linea que va cerca del titulo*/
+header .section-text .div-text .div-text-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header .section-text .div-text .img-line1{
+    max-width: 160px;
+    margin-left: -10%;
+    margin-top: 5px;
+}
+
+
+/*linea grande que va debajo del texto*/
+.line-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -4rem;
+  }
+  
+  .line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #C3DC00;
+  }
+  
+  .line:before,
+  .line:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #C3DC00;
+  }
+  
+  .line:before {
+    left: 0;
+  }
+  
+  .line:after {
+    right: 0;
+  }
+  
+
+/*media query para adaptar la lading page*/
+
+@media all and (max-width:1150px){
+
+    header .div-logo img{
+        max-width: 70%;
+        height: 70%;
+    }
+}
+
+
+@media all and (max-width:1030px){ 
+    /**estilos para posicionar el logo*/
+    header .div-logo{
+        width: 20%;
+        height: 40%;
+    }
+
+    header .div-logo img{
+        width: 80%;
+        height: 55%;
+    }
+}
+
+@media all and (max-width:900px){
+  
+    /**estilos para posicionar el logo*/
+    header .div-logo{
+        width: 30%;
+        height: 40%;
+    }
+
+    header .div-logo img{
+        width: 90%;
+        height: 80%;
+    }
+
+    header span{
+        font-size: 3vw;
+    }
+
+    header h1{
+        font-size: 7vw;
+    }
+    
+    header h2{
+        font-size: 4vw;
+    }
+
+    header .section-text .div-text .img-line1{
+        margin-left: -17%;
+    }
+
+    .line-container {
+        margin-top: -3rem;
+      }
+}
+
+
+@media all and (max-width:800px){
+        
+    /**estilos para posicionar el logo*/
+    header .div-logo{
+        width: 25%;
+     
+    }
+
+    header .div-logo img{
+        width: 80%;
+        height: 55%;
+    }
+}
+
+@media all and (max-width:700px){
+    /**estilos para posicionar el logo*/
+    header .div-logo{
+        width: 30%;
+    }
+    header span{
+        line-height: 25px;
+    }
+}
+
+@media all and (max-width:600px){
+
+    header{
+        flex-direction: column-reverse;
+     }
+    /**estilos para posicionar el logo*/
+    header .div-logo{
+        width: 40%;
+        height: 34%;
+        margin-top: 8%;
+    }
+
+    header .div-logo img{
+        width: 100%;
+        height: 80%;
+    }
+
+    header .section-text{
+        width: 80%;
+        height: 50vh;
+    }
+    
+    header .section-text .div-text .img-line1{
+        max-width: 130px;
+        margin-left: -19%;
+        margin-top: 10px;
+    }
+  
+    header .div-text div h2{
+        margin-top: -4rem;
+    }
+
+    .line-container {
+        margin-top: -1.4rem;
+      }
+      
+      .line {
+        width: 80%;
+      }
+
+}
+
+
+@media all and (max-width:460px){
+
+    /**estilos para posicionar el logo*/
+    header .div-logo{
+        width: 45%;
+        height: 35%;
+    }
+
+    header .div-logo img{
+        width: 100%;
+        height: 70%;
+    }
+
+    header span{
+        font-size: 5vw;
+    }
+
+    header h1{
+        font-size: 10vw;
+    }
+    
+    header h2{
+        font-size: 7vw;
+    }
+   
+    header .section-text .div-text .img-line1{
+        max-width: 100px;
+        margin-left: -15%;
+    }
+  
+}
+
+
+
+@media all and (max-width:380px){
+    
+    /**estilos para posicionar el logo*/
+ 
+    header .div-logo img{
+        height: 60%;
+    }
+
+    header .section-text .div-text .img-line1{
+        max-width: 80px;
+        margin-left: -17%;
+    }
+    
+    header .div-text{
+        justify-content: flex-start;
+    }
+
+    header span{
+        margin-top: 17%;
+    }
+
+    .line-container {
+        margin-top: -2.2rem;
+      }
+}

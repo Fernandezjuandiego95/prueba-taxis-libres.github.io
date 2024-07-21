@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.section-row{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Arial';
+    font-style: normal;
+    color: #010101;
+    height: 100%;
+}
+
+.div-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    background: rgba(247, 248, 252, 0.99);
+    box-shadow: 8px 6px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px; 
+    margin-top: 2rem;
+}
+
+.div-card:hover{
+    border: solid 2px #A0B40A;
+}
+
+.section2-title-h2{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.p-intro{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 70%;
+}
+
+.p-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.size{
+    font-size: 18px;
+    border: 2px solid #A0B40A;
+    border-radius: 10px;
+    padding: 15px 12px 12px 15px;
+    margin-top: 20px;
+}
+
+
+
+.div-padre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.div-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+
+/*media query para adaptar la lading page a diferentes dispositivos*/
+@media all and (max-width:1200px){
+
+    .p-intro{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+    }
+    
+}
+
+@media all and (max-width:1000px){
+
+    .p-intro{
+        font-size: 16px;
+    }
+
+    .p-text{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .section-row .div-card img{
+        width: 120px;
+        height: 100px;
+    }
+
+    .size{
+        font-size: 16px;
+        padding: 12px 9px 9px 12px;
+    }
+}
+
+@media all and (max-width:770px){
+
+    .div-card{
+        flex-direction: column;
+    }
+    .p-intro{
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .p-text{
+        font-size: 12px;
+    }
+    
+    .section-row .div-card img{
+       visibility: hidden;
+       width: 0px;
+       height: 0px;
+    }
+
+    .size{
+        font-size: 13px;
+        padding: 12px 9px 9px 12px;
+    }
+}
+
+@media all and (max-width:540px){
+  
+    .div-card{
+        flex-direction: column;
+    }
+    .p-intro{
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .p-text{
+        font-size: 12px;
+    }
+    
+    .section-row .div-card img{
+       visibility: hidden;
+       width: 0px;
+       height: 0px;
+    }
+
+    .size{
+        font-size: 13px;
+        padding: 12px 9px 9px 12px;
+    }
+
+    .div-padre{
+        flex-direction: column;
+    }
+}
+
+

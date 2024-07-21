@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-carb-section3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding: 20px 20px 15px 20px;
+}
+
+.tab{
+    margin-top: 5rem;
+}
+
+.p-section3{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.img-section3{
+    max-width: 400px;
+    margin-top: 2rem;
+}
+
+.circuit{
+    width: 65%;
+    height: 400px;
+    position: absolute;
+    margin-top: -4rem;
+    margin-right: -20rem;
+    z-index: -1;
+}
+
+/*media query para adaptar la lading page a diferentes dispositivos*/
+@media all and (max-width:550px){
+
+    .p-section3{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .circuit{
+       visibility: hidden;
+       width: 0px;
+       height: 0px;
+    }
+
+    .img-section3{
+        max-width: 300px;
+    }
+}
